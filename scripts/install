@@ -48,7 +48,7 @@ yunohost service add $app --description="A short description of the app" --log="
 #chown $app:$app "$install_dir/some_config_file"
 
 pushd $install_dir
- 	./cntr createuser --redis-url redis://localhost:6379 --utc-offset 2 $admin <<< $password
+ 	./cntr createuser --redis-url redis://localhost:6379 --utc-offset 2 $admin <<< $'password'
 popd
 
 #=================================================

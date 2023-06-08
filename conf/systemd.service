@@ -7,8 +7,8 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/cntr serve
-#--redis-url redis://localhost:6379 --bind :__PORT__
+ExecStart=__INSTALL_DIR__/cntr serve --bind 127.0.0.1:__PORT__
+#--redis-url redis://localhost:6379
 
 
 # Sandboxing options to harden security
